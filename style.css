@@ -1,0 +1,46 @@
+h1 {
+    margin: 0px !important;
+}
+
+img {
+    width: 90%;
+    /* margin: 0px !important; */
+}
+
+/* p { */
+    /* margin: 0px !important; */
+/* } */
+
+.mark-it{
+    fill: red;
+    fill-opacity:0.5;
+
+}
+
+ul, p{
+    font-size: x-large;
+}
+
+.img-overlay-wrap {
+    position: relative;
+    display: grid; /* <- makes sure images are aligned with the "text below"*/
+    justify-items: center; /*<- makes sure images are aligned with the "text below"*/
+    /* display: inline-block; */ /* <= shrinks container to image size */
+}
+
+.img-overlay-wrap img {
+    /* <= optional, for responsiveness */
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-overlay-wrap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
