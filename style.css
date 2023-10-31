@@ -12,27 +12,109 @@ img {
 /* } */
 
 .mark-it{
-    fill: red;
-    fill-opacity:0.5;
+    /* fill: red; */
+    fill-opacity:0.0;
+    stroke: red;
+    stroke-width: 2px;
 
+}
+
+.code{
+    background-color: grey;
 }
 
 ul, p{
     font-size: x-large;
+    margin-bottom: 10px !important;
+}
+
+
+kbd{
+    font-size: smaller;
+    background-color: gray;
+    border-radius: 2px;
+    padding: 3px
 }
 
 .img-overlay-wrap {
-    position: relative;
-    display: grid; /* <- makes sure images are aligned with the "text below"*/
-    justify-items: center; /*<- makes sure images are aligned with the "text below"*/
-    /* display: inline-block; */ /* <= shrinks container to image size */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+    padding-top: 56.25%; 
+    background-position: 0 -36px;
+}
+
+
+.gh-button{
+    font-size: smaller; 
+    padding: 3px; 
+    border-radius: 3px;
+}
+
+.gh-green{
+    background-color:  #1f883d; 
+}
+
+.gh-lightgray{
+    background-color: #fefefe;
+    color: black;
+}
+
+#screenshot-0{
+    background-image: url("images2/Screenshot_0.png");
+}
+#screenshot-1{
+    background-image: url("images2/Screenshot_1.png");
+}
+#screenshot-2{
+    background-image: url("images2/Screenshot_2.png");
+}
+#screenshot-2b{
+    background-image: url("images2/Screenshot_2b.png");
+}
+#screenshot-3{
+    background-image: url("images2/Screenshot_3.png");
+}
+#screenshot-4{
+    background-image: url("images2/Screenshot_4.png");
+}
+#screenshot-5{
+    background-image: url("images2/Screenshot_5.png");
+}
+#screenshot-6{
+    background-image: url("images2/Screenshot_6.png");
+}
+#screenshot-7{
+    background-image: url("images2/Screenshot_7.png");
+}
+#screenshot-8{
+    background-image: url("images2/Screenshot_8.png");
+}
+#screenshot-9{
+    background-image: url("images2/Screenshot_9.png");
+}
+#screenshot-10{
+    background-image: url("images2/Screenshot_10.png");
+}
+#screenshot-11{
+    background-image: url("images2/Screenshot_11.png");
+}
+#screenshot-12{
+    background-image: url("images2/Screenshot_12.png");
 }
 
 .img-overlay-wrap img {
     /* <= optional, for responsiveness */
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    /* height: auto; */
 }
 
 .img-overlay-wrap svg {
