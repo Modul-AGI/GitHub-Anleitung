@@ -29,35 +29,39 @@
 
 
 			<section>
+
+				<h3>Die Augangslage</h3>
 				
-				<div id="screenshot-0" class="img-overlay-wrap">
+				<div id="screenshot-0" class="img-overlay">
 
 					<svg viewBox="0 0 1000 1000">
 						<g class="fragment fade-out" data-fragment-index="4">
-							<rect class="fragment mark-it" data-fragment-index="2" ry="5" x="514" y="282" width="186", height="22"/>
-							<rect class="fragment mark-it" data-fragment-index="3" ry="5" x="275" y="302" width="22", height="22"/>
+							<rect class="fragment mark-it" data-fragment-index="2" ry="5" x="514" y="308" width="186", height="22"/>
+							<rect class="fragment mark-it" data-fragment-index="3" ry="5" x="275" y="328" width="22", height="22"/>
 							
 						</g>
-					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="4" ry="5" x="785" y="262" width="100", height="22"/>
+					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="4" ry="5" x="785" y="288" width="100", height="22"/>
 					</svg>
 				  
 				</div>
 
-				<div class="r-stack" style="align-content:start;">
-					<p class="fragment fade-in-then-out" data-fragment-index="0">
-						Angenommen ihr liest Kapitel 4 der Statistik Unterlagen...
-					</p>
+				<div class="r-stack">
+					<div class="fragment fade-in-then-out" data-fragment-index="0" >
+						<p>Angenommen ihr liest Kapitel 4 der Statistik Unterlagen...</p>
+					</div>
 					<div class="fragment fade-out" data-fragment-index="4">
 						<p class="fragment" data-fragment-index="1">
 							...und wollt folgende Änderung umsetzen:
 						</p>
-						<ul>
-							<li class="fragment" data-fragment-index="2">"<em>den bekannten Methoden</em>"" zu "<em>den <span style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"</li>
-							<li class="fragment" data-fragment-index="3">"lm" soll als Code dargestellt werden ("<code style="background-color: grey;">lm</code>")</li>
+						<ul class="r-stack">
+							<li class="fragment fade-in-then-out" data-fragment-index="2">"<em>den bekannten Methoden</em>"" zu "<em>den <span style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"</li>
+							<li class="fragment fade-in-then-out" data-fragment-index="3">"lm" soll als Code dargestellt werden ("<code style="background-color: grey;">lm</code>")</li>
 						</ul>
 					</div>
 
-					<p class="fragment" data-fragment-index="4">Dafür ihr auf den Link "Seite editieren" Klicken, der sich immer rechts unter dem Inhaltsverzeichnis befindet.</p>
+					<div class="fragment" data-fragment-index="4">
+						<p>Dafür ihr auf den Link "Seite editieren" Klicken, der sich immer rechts unter dem Inhaltsverzeichnis befindet.</p>
+					</div>
 
 	
 				</div>
@@ -67,26 +71,28 @@
 
 		
 			<section>
-				<div id="screenshot-1" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_1.png"> -->
+				<div id="screenshot-1" class="img-overlay">
 				</div>
 
 				<div class="r-stack">
-					<p class="fragment fade-in-then-out">
+					<div class="fragment fade-in-then-out">
+						<p>
 						Falls ihr noch keinen GitHub Account habt, müsst ihr zuerst noch einen 
 						erstellen. Da ein Grossteil aller R-Packages auf GitHub gehostet sind, 
-						lohnt sich dieser Schritt.			
-					</p>
-					<p class="fragment">
+						lohnt sich dieser Schritt.
+						</p>			
+					</div>
+					<div class="fragment">
+						<p>
 						Nach der GitHub Registration und Anmeldung müsst ihr den Link "Seite editieren" nochmals klicken.
-					</p>
+						</p>
+					</div>
 				</div>
 
 			</section>
 
 			<section>
-				<div id="screenshot-2" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_2.png"> -->
+				<div id="screenshot-2" class="img-overlay">
 				</div>
 
 				<div class="r-stack">
@@ -106,8 +112,7 @@
 			</section>
 
 			<section>
-				<div id="screenshot-2b" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_3.png"> -->
+				<div id="screenshot-2b" class="img-overlay">
 				</div>
 
 				<div class="r-stack">
@@ -138,22 +143,28 @@
 			<section>
 
 				<ul>
-					<li class="fragment">Eine Markup-Sprache ist eine maschinenlesbare Sprache für die Gliederung und Formatierung von Texten.</li>
+					<li class="fragment">Eine <span class="hl">Markup-Sprache</span> ist eine <span class="hl">maschinenlesbare Sprache</span> für die Gliederung und Formatierung von Texten.</li>
 					<li class="fragment">HTML ist die bekannteste und am häufigsten verwendete Markup Sprache</li>
-					<li class="fragment">Markdown ist viel simpler in der Schreibweise und sowohl für Mensch und Maschine lesbar</li>
+					<li class="fragment"><span class="hl">Markdown</span> ist viel simpler in der Schreibweise und sowohl für Mensch und Maschine lesbar</li>
 					<li class="fragment">Beispielsweise ist der folgende Satz in Markdown geschrieben:</li>
-					<li class="fragment" style="list-style-type: none;">
-						<pre style="font-size: large;"><code data-trim class="text">
-						
-							Dieser Satz ist *wirklich* in Markdown geschrieben. 
-						
-						</code></pre>
-					</li>
-					<li class="fragment">Jeder Leser dieses Satzes erkennt, dass das Wort "wirklich" hervorgehoben wird</li>
-					<li class="fragment">Ein Sternchen gilt als Kusive hervorhebung, zwei Sternchen als Fettdruck</li>
-					<li class="fragment">Nun braucht es eine Software, die diesen Satz von Markdown z. B. in PDF konvertiert</li>
-					<li class="fragment">Markdown kann als kostenloser Ersatz für herkömmliche Text-Layout-Systeme wie Microsoft Word genutzt werden</li>
+
+				</ul>
+
+				
+				<pre style="font-size: large;" class="fragment">
+					<code data-trim class="text">
+							
+							# Markdown, eine Markup Sprache
+
+							Dieser Satz ist *wirklich* in **Markdown** geschrieben. 
 					
+					</code>
+			</pre>
+				<ul>
+					<li class="fragment">Dieser "Quellcode" ist <span class="hl">gut lesbar</span> (es ist erkennbar, dass "wirklich" und "Markdown" hervorgehoben werden).</li>
+					<li class="fragment">Ein Sternchen gilt als Kusive hervorhebung, zwei Sternchen als Fettdruck. <span class="fragment hl" style="text-decoration: underline;">Weitere Infos zum Markdown-Syntax findet ihr <a href="https://quarto.org/docs/authoring/markdown-basics.html">auf der Quarto Website</a></span></li>
+					<li class="fragment">Ein Programm wie <a href="http://quarto.org">Quarto</a> kann Markdown <span class="hl">in PDF oder HTML</span> konvertiert</li>
+					<li class="fragment">Markdown kann als <span class="hl">kostenloser Ersatz</span> für herkömmliche Text-Layout-Systeme wie Microsoft Word genutzt werden</li>
 				</ul>
 
 				
@@ -163,7 +174,7 @@
 			</section>
 
 			<section>
-				<div id="screenshot-2b" class="img-overlay-wrap">
+				<div id="screenshot-2b" class="img-overlay">
 				</div>
 
 				<div class="r-stack">
@@ -188,34 +199,41 @@
 			</section>
 
 			<section>
-				<div id="screenshot-3" class="img-overlay-wrap">
+				<div id="screenshot-3" class="img-overlay">
 					<svg viewBox="0 0 1000 1000">
 					
-					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="2" ry="5" x="17" y="222" width="470", height="60"/>
+					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="2" ry="5" x="17" y="248" width="470", height="60"/>
 					  <g class="fragment fade-in-then-out mark-it" data-fragment-index="3">
-						<rect ry="5" x="20" y="230" width="60", height="18"/>
-						<rect ry="5" x="170" y="230" width="38", height="18"/>
+						<rect ry="5" x="20" y="256" width="60", height="18"/>
+						<rect ry="5" x="170" y="256" width="38", height="18"/>
 					  </g>
 
-					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="4" ry="5" x="454" y="324" width="58", height="18" />
+					  <rect class="fragment fade-in-then-out mark-it" data-fragment-index="4" ry="5" x="454" y="350" width="58", height="18" />
 					  
 					</svg>
 
-					<!-- <img data-src="images2/Screenshot_4.png"> -->
 				</div>
 
 				<div class="r-stack">
 
-					<p class="fragment fade-in-then-out" data-fragment-index="2" >
-						Diese Tastenkombination öffnet die Suchleiste...
-					</p>
+					<div class="fragment fade-in-then-out" data-fragment-index="2" >
+						<p>
+							Diese Tastenkombination öffnet die Suchleiste...
+						</p>
+					</div>
 							
-					<p class="fragment fade-in-then-out" data-fragment-index="3">
-						... wo wir einen sinvollen Begriff eingeben können und auf <span class="gh-button gh-lightgray">Next</span> klicken...
-					</p>
-					<p class="fragment fade-in-then-out" data-fragment-index="4">
-						... und springen im Quartodokument zur entsprechenden Stelle
-					</p>
+					<div class="fragment fade-in-then-out" data-fragment-index="3">
+						<p>
+						
+							... wo wir einen sinvollen Begriff eingeben können und a
+						uf <span class="gh-button gh-lightgray">Next</span> klicken...
+						</p>
+					</div>
+					<div class="fragment fade-in-then-out" data-fragment-index="4">
+						<p>
+							... und springen im Quartodokument zur entsprechenden Stelle
+						</p>
+					</div>
 						
 
 
@@ -225,64 +243,123 @@
 
 			<section>
 				
-				<div id="screenshot-4" class="img-overlay-wrap">
+				<div id="screenshot-4" class="img-overlay">
 					<svg viewBox="0 0 1000 1000">
 					
-						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="1" ry="5" x="454" y="324" width="70", height="18" />
-						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="2" ry="5" x="716" y="324" width="28", height="18" />
+						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="1" ry="5" x="454" y="350" width="70", height="18" />
+						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="2" ry="5" x="716" y="350" width="28", height="18" />
 						
 					  </svg>
 				</div>
 
 				<div class="r-stack">
-					<p class="fragment fade-in-then-out" data-fragment-index="0">
-						An dieser Stelle können wir nun die Änderungen vornehmen.
-					</p>
-					<p class="fragment fade-in-then-out" data-fragment-index="1">
-						"<em>den bekannten Methoden</em>"" zu "<em>den <span style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"
-					</p>
-					<p class="fragment fade-in-then-out" data-fragment-index="2">
-						"lm" soll als Code dargestellt werden ("<code class="code">lm</code>"): Hierfür müssen wir den Text mit <code class="code">`</code> Umgeben
-					</p>
+					<div class="fragment fade-in-then-out" data-fragment-index="0">
+						<p>
+							An dieser Stelle können wir nun die Änderungen vornehmen.
+						</p>
+					</div>
+					<div class="fragment fade-in-then-out" data-fragment-index="1">
+						<p>
+							"<em>den bekannten Methoden</em>"" zu "<em>den <span style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"
+						</p>
+					</div>
+					<div class="fragment fade-in-then-out" data-fragment-index="2">
+						<p>
+							"lm" soll als Code dargestellt werden ("<code class="code">lm</code>"): Hierfür müssen wir den Text mit <code class="code">`</code> Umgeben
+						</p>
+					</div>
 
 				</div>
 			</section>
 			
 
 			<section>
-				<div id="screenshot-5" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_5.png"> -->
+				<div id="screenshot-5" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+					
+						<rect class="fragment fade-out mark-it" data-fragment-index="0" ry="5" x="60" y="215" width="60", height="23" />
+						<rect class="fragment fade-in mark-it" data-fragment-index="0" ry="5" x="876" y="171" width="112", height="24" />
+						
+					  </svg>
+
+				<div class="r-stack">
+					<div class="fragment fade-out" data-fragment-index="0">
+						<p>
+							Im Preview Modus sehen wir die (ungespeicherten) Änderungen.
+						</p>
+					</div>
+					<div class="fragment fade-in" data-fragment-index="0">
+						<p>
+							Mit Klick auf <span class="gh-button gh-green">Commit changes...</span> werden die Änderungen gespeichert.
+						</p>
+					</div>
+
 				</div>
+
+				</div>
+
 			</section>
 
 			<section>
-				<div id="screenshot-6" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_6.png"> -->
+				<div id="screenshot-7" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+					
+						<rect class="mark-it" data-fragment-index="0" ry="5" x="570" y="428" width="105", height="23" />
+						
+					  </svg>
 				</div>
+				<p>
+					Wir haben die Möglichkeit, einen Kommentar ("Commit message") über unsere Änderung zu platzieren 
+					(z.B. <em>Satz ausformulieren und Code hervorheben</em>) und können den Speichervorgang mit
+					<span class="gh-button gh-green">Propose changes</span> abschliessen.
+
+				</p>
 			</section>
 
 			<section>
-				<div id="screenshot-7" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_7.png"> -->
+				<div id="screenshot-8" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+					
+						<rect class="mark-it" data-fragment-index="0" ry="5" x="844" y="120" width="118", height="23" />
+						
+					  </svg>
 				</div>
+
+				<p>
+					Um uns eure Änderung uns als Änderungsvorschlag zu schicken, müsst ihr daraus einen "Pull Request" machen
+					(Klick auf den Button <span class="gh-button gh-green">Create pull request</span>)
+
+
+				</p>
 			</section>
 
 			<section>
-				<div id="screenshot-8" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_8.png"> -->
+				<div id="screenshot-9" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+					
+						<rect class="mark-it" data-fragment-index="0" ry="5" x="569" y="378" width="150", height="23" />
+						
+					  </svg>
 				</div>
+
+				<p>
+					Wir haben nochmals die Möglichkeit, einen Kommentar zu unserer Änderung zu platzieren.
+					Diese müssen wir aber nicht nutzen und können den Vorgang mit <span class="gh-button gh-green">Create pull request</span> abschliessen.
+				</p>
 			</section>
 
 			<section>
-				<div id="screenshot-9" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_9.png"> -->
-				</div>
-			</section>
+				<div id="screenshot-10" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+					
+						<rect class="mark-it" data-fragment-index="0" ry="5" x="170" y="98" width="125", height="23" />
+						
+					  </svg>				</div>
 
-			<section>
-				<div id="screenshot-10" class="img-overlay-wrap">
-					<!-- <img data-src="images2/Screenshot_10.png"> -->
-				</div>
+				<p>
+					Der Änderungsvorschlag ("Pull Reqest") ist jetzt bei uns angekommen und wir werden in Prüfen. 
+					Vielen Dank!
+				</p>
 			</section>
 
 

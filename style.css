@@ -1,15 +1,7 @@
-h1 {
+h1, h2, h3 {
     margin: 0px !important;
 }
 
-img {
-    width: 90%;
-    /* margin: 0px !important; */
-}
-
-/* p { */
-    /* margin: 0px !important; */
-/* } */
 
 .mark-it{
     /* fill: red; */
@@ -25,7 +17,7 @@ img {
 
 ul, p{
     font-size: x-large;
-    margin-bottom: 10px !important;
+    /* margin-bottom: 10px !important; */
 }
 
 
@@ -36,20 +28,11 @@ kbd{
     padding: 3px
 }
 
-.img-overlay-wrap {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    /* height: 100vh; */
-    padding-top: 56.25%; 
-    background-position: 0 -36px;
-}
-
-
 .gh-button{
-    font-size: smaller; 
+    font-size: 80%; 
     padding: 3px; 
     border-radius: 3px;
+    white-space: nowrap;
 }
 
 .gh-green{
@@ -61,67 +44,72 @@ kbd{
     color: black;
 }
 
-#screenshot-0{
-    background-image: url("images2/Screenshot_0.png");
-}
-#screenshot-1{
-    background-image: url("images2/Screenshot_1.png");
-}
-#screenshot-2{
-    background-image: url("images2/Screenshot_2.png");
-}
-#screenshot-2b{
-    background-image: url("images2/Screenshot_2b.png");
-}
-#screenshot-3{
-    background-image: url("images2/Screenshot_3.png");
-}
-#screenshot-4{
-    background-image: url("images2/Screenshot_4.png");
-}
-#screenshot-5{
-    background-image: url("images2/Screenshot_5.png");
-}
-#screenshot-6{
-    background-image: url("images2/Screenshot_6.png");
-}
-#screenshot-7{
-    background-image: url("images2/Screenshot_7.png");
-}
-#screenshot-8{
-    background-image: url("images2/Screenshot_8.png");
-}
-#screenshot-9{
-    background-image: url("images2/Screenshot_9.png");
-}
-#screenshot-10{
-    background-image: url("images2/Screenshot_10.png");
-}
-#screenshot-11{
-    background-image: url("images2/Screenshot_11.png");
-}
-#screenshot-12{
-    background-image: url("images2/Screenshot_12.png");
-}
-
-.img-overlay-wrap img {
-    /* <= optional, for responsiveness */
-    display: block;
+.img-overlay {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    left: 0;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    /* height: auto; */
+    padding-top: 54.947916667%; /* must be the W/H ratio (1055px/1920px)  */
 }
 
-.img-overlay-wrap svg {
+
+
+.img-overlay svg {
     position: absolute;
     top: 0;
     left: 0;
 }
+
+.hl{
+    color: orange
+}
+
+
+
+#screenshot-0{
+    background-image: url("images/Screenshot_0.png");
+}
+#screenshot-1{
+    background-image: url("images/Screenshot_1.png");
+}
+#screenshot-2{
+    background-image: url("images/Screenshot_2.png");
+}
+#screenshot-2b{
+    background-image: url("images/Screenshot_2b.png");
+}
+#screenshot-3{
+    background-image: url("images/Screenshot_3.png");
+}
+#screenshot-4{
+    background-image: url("images/Screenshot_4.png");
+}
+#screenshot-5{
+    background-image: url("images/Screenshot_5.png");
+}
+#screenshot-6{
+    background-image: url("images/Screenshot_6.png");
+}
+#screenshot-7{
+    background-image: url("images/Screenshot_7.png");
+}
+#screenshot-8{
+    background-image: url("images/Screenshot_8.png");
+}
+#screenshot-9{
+    background-image: url("images/Screenshot_9.png");
+}
+#screenshot-10{
+    background-image: url("images/Screenshot_10.png");
+}
+#screenshot-11{
+    background-image: url("images/Screenshot_11.png");
+}
+#screenshot-12{
+    background-image: url("images/Screenshot_12.png");
+}
+
+
 
 
 
