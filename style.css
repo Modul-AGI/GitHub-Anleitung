@@ -66,6 +66,7 @@ kbd {
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 54.947916667%; /* must be the W/H ratio (1055px/1920px)  */
+    border-radius: 5px; /* optional*/
 }
 
 
