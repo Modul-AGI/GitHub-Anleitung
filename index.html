@@ -27,6 +27,54 @@
 	<div class="reveal">
 		<div class="slides">
 
+			<section>
+
+				<h1 class="r-fit-text">Kollaborativ Lehrunterlagen mitentiwckeln</h1>
+
+				<p>
+					In dieser Schritt-für-Schritt Anleitung möchten wir euch zeigen,
+					wie ihr an den Statistik Lehrunterlagen mitarbeiten könnt.
+				</p>
+
+				<div class="r-vstack hl" style="padding-top: 1em;">
+					<p style="padding: 0; margin: 0;">Navigieren mittels der Pfeiltasten</p>
+					<div style="display: grid; grid-template-columns: auto auto; column-gap: 30px;">
+						<div style="justify-content: end; text-align: right;"><kbd>&nbsp;&nbsp;←&nbsp;&nbsp;</kbd></div>
+						<div style="justify-content: end; text-align: left;"><kbd>&nbsp;&nbsp;→&nbsp;&nbsp;</kbd></div>
+						<div style="font-size: 50%; text-align: right;">Zurück</div>
+						<div style="font-size: 50%; text-align: left;">Vorwärts</div>
+					</div>
+				</div>
+
+
+				<div class="r-hstack" style="padding-top: 2em;">
+					<div style="width: 50%;">
+						<p style="margin: 0; font-size: 40%;">
+							Diese Anleitung ist folgendermassen Lizensiert: <a
+								href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a>
+						</p>
+						<a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">
+							<img style="margin: 10px;" src="images/CC_BY_icon.svg" width="80%">
+						</a>
+					</div>
+				</div>
+
+
+
+			</section>
+
+			<section>
+				<h3>Vorbereitung: GitHub Account</h3> 
+
+				<ul>
+					<li class="fragment">Um an den Unterlagen mitzuarbeiten, braucht ihr einen kostenlosen <span class="hl">GitHub Account</span></li>
+					<li class="fragment">GitHub ist ein Ort, wo der <span class="hl">Quellcode</span> von Software geteilt wird</li>
+					<li class="fragment">Da <span class="hl">> 90 % der R-Packages</span> auf GitHub gehostet werden, lohnt sich ein Account ohnehin sehr</li>
+					<li class="fragment">Hier kann man sich einen neuen Account erstellen: <a href="https://github.com/login">github.com/login</a></li>
+
+				</ul>
+			</section>
+
 
 			<section>
 
@@ -35,37 +83,37 @@
 				<div id="screenshot-0" class="img-overlay">
 
 					<svg viewBox="0 0 1000 1000">
-						<g class="fragment fade-out" data-fragment-index="4">
-							<rect class="fragment mark-it" data-fragment-index="2" ry="5" x="514" y="308" width="186" ,
+						<g class="fragment fade-out" data-fragment-index="3">
+							<rect class="fragment mark-it" data-fragment-index="1" ry="5" x="514" y="308" width="186" ,
 								height="22" />
-							<rect class="fragment mark-it" data-fragment-index="3" ry="5" x="275" y="328" width="22" ,
+							<rect class="fragment mark-it" data-fragment-index="2" ry="5" x="275" y="328" width="22" ,
 								height="22" />
 
 						</g>
-						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="4" ry="5" x="785" y="288"
+						<rect class="fragment fade-in-then-out mark-it" data-fragment-index="3" ry="5" x="785" y="288"
 							width="100" , height="22" />
 					</svg>
 
 				</div>
 
 				<div class="r-stack">
-					<div class="fragment fade-in-then-out" data-fragment-index="0">
+					<div class="fragment fade-out" data-fragment-index="0">
 						<p>Angenommen ihr liest Kapitel 4 der Statistik Unterlagen...</p>
 					</div>
-					<div class="fragment fade-out" data-fragment-index="4">
-						<p class="fragment" data-fragment-index="1">
+					<div class="fragment fade-out" data-fragment-index="3">
+						<p class="fragment" data-fragment-index="0">
 							...und wollt folgende Änderung umsetzen:
 						</p>
 						<ul class="r-stack">
-							<li class="fragment fade-in-then-out" data-fragment-index="2">"<em>den bekannten
+							<li class="fragment fade-in-then-out" data-fragment-index="1">"<em>den bekannten
 									Methoden</em>"" zu "<em>den <span style="text-decoration: underline;">uns
 										bereits</span> bekannten Methoden</em>"</li>
-							<li class="fragment fade-in-then-out" data-fragment-index="3">"lm" soll als Code dargestellt
+							<li class="fragment fade-in-then-out" data-fragment-index="2">"lm" soll als Code dargestellt
 								werden ("<code style="background-color: grey;">lm</code>")</li>
 						</ul>
 					</div>
 
-					<div class="fragment" data-fragment-index="4">
+					<div class="fragment" data-fragment-index="3">
 						<p>Dafür ihr auf den Link "Seite editieren" Klicken, der sich immer rechts unter dem
 							Inhaltsverzeichnis befindet.</p>
 					</div>
@@ -77,20 +125,20 @@
 			</section>
 
 
-			<section>
+			<section data-visibility="hidden">
 				<h3>GitHub Account</h3>
 				<div id="screenshot-1" class="img-overlay">
 				</div>
 
 				<div class="r-stack">
-					<div class="fragment fade-in-then-out">
+					<div class="fragment fade-out" data-fragment-index="0">
 						<p>
 							Falls ihr noch keinen GitHub Account habt, müsst ihr zuerst noch einen
 							erstellen. Da ein Grossteil aller R-Packages auf GitHub gehostet sind,
 							lohnt sich dieser Schritt.
 						</p>
 					</div>
-					<div class="fragment">
+					<div class="fragment" data-fragment-index="0">
 						<p>
 							Nach der GitHub Registration und Anmeldung müsst ihr den Link "Seite editieren" nochmals
 							klicken.
@@ -103,22 +151,29 @@
 			<section>
 				<h3>Unterlage Kopieren</h3>
 				<div id="screenshot-2" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+
+						<rect class="fragment fade-in mark-it" data-fragment-index="0" ry="5" x="443" y="264"
+							width="113" , height="23" />
+
+					</svg>
+
 				</div>
 
 				<div class="r-stack">
-					<div class="fragment fade-in-then-out">
+					<div class="fragment fade-out" data-fragment-index="0">
 						<p>
 							Eure Änderungen macht ihr auf einer vollständigen <em>Kopie</em>
 							unserer Unterlagen. Auf GitHub wird Kopieren als "Forking" bezeichnet.
 						</p>
 					</div>
-					<div class="fragment fade-in-then-out">
+					<div class="fragment fade-in-then-out" data-fragment-index="0">
 						<p>
 							Um eine eigene Kopie der Unterlagen zu erstellen, müsst ihr auf den
 							Button <span class="gh-button gh-green">Fork this repository</span> klicken.
 						</p>
 					</div>
-					<div class="fragment fade-in-then-out">
+					<div class="fragment fade-in-then-out" data-fragment-index="1">
 						<p>
 							(Dieser Schritt entfällt bei allfälligen weiteren Änderungen, die ihr vornehmen werdet.)
 						</p>
@@ -133,16 +188,20 @@
 				</div>
 
 				<div class="r-stack">
-					<p class="fragment fade-in-then-out" data-fragment-index="0">
-						Nach dem <em>Forken</em> könnt ihr das entsprechende Quarto-File bearbeiten.
-					</p>
+					<div class="fragment fade-out" data-fragment-index="1">
+						<p>
+							Nach dem <em>Forken</em> könnt ihr das entsprechende Quarto-File bearbeiten.
+
+						</p>
+					</div>
 
 					<div class="fragment fade-out" data-fragment-index="3">
 						<p class="fragment fade-in" data-fragment-index="1">
-							Quarto (das ist ein Open Source-Tool, das die Produktion und Publikation in verschiedenen Formaten erlaubt und das hier in GitHub integriert ist) wird in einer sogennanten <a
-								href="https://de.wikipedia.org/wiki/Auszeichnungssprache" target="blank">Markup</a> Sprache
-							geschrieben, die sich <a
-								href="https://www.markdownguide.org/cheat-sheet/" target="blank"><em>Markdown</em></a> nennt.
+							Quarto Dokumente (welche ihr bereits aus den Übungen kennt) werden in einer sogennanten <a
+								href="https://de.wikipedia.org/wiki/Auszeichnungssprache" target="blank">Markup</a>
+							Sprache
+							geschrieben, die sich <a href="https://www.markdownguide.org/cheat-sheet/"
+								target="blank"><em>Markdown</em></a> nennt.
 						</p>
 						<p class="fragment fade-in" data-fragment-index="2">
 							(Hier hat sich jemand ein etwas verwirrendes Wortspiel erlaubt)
@@ -162,17 +221,17 @@
 
 			<section>
 				<h3>Markdown</h3>
+				<div class="r-vstack" style="align-items: start;">
 				<ul>
 					<li class="fragment">Eine <span class="hl">Markup-Sprache</span> ist eine <span
 							class="hl">maschinenlesbare Sprache</span> für die Gliederung und Formatierung von Texten.
 					</li>
-					<li class="fragment">HTML ist die bekannteste und am häufigsten verwendete Markup Sprache</li>
-					<li class="fragment"><span class="hl">Markdown</span> ist viel simpler in der Schreibweise und
-						sowohl für Mensch und Maschine lesbar</li>
-					<li class="fragment">Beispielsweise ist der folgende Satz in Markdown geschrieben:</li>
+					<li class="fragment"><span class="hl">HTML</span> ist die bekannteste und verbreiteste Markup
+						Sprache.</li>
+					<li class="fragment">Markdown (auch eine Markup sprache) ist <span class="hl">viel simpler</span> in
+						der Schreibweise. Ein Beispiel:</li>
 
 				</ul>
-
 
 				<pre style="font-size: large;" class="fragment">
 					<code data-trim class="text">
@@ -182,25 +241,41 @@
 							Dieser Satz ist *wirklich* in **Markdown** geschrieben. 
 					
 					</code>
-			</pre>
+				</pre>
+				
 				<ul>
-					<li class="fragment">Dieser "Quellcode" ist <span class="hl">gut lesbar</span> (es ist erkennbar,
-						dass "wirklich" und "Markdown" hervorgehoben werden).</li>
-					<li class="fragment">Ein Sternchen gilt als Kusive hervorhebung, zwei Sternchen als Fettdruck. <span
-							class="fragment hl" style="text-decoration: underline;">Weitere Infos zum Markdown-Syntax
-							findet ihr <a href="https://quarto.org/docs/authoring/markdown-basics.html" target="blank">auf der Quarto
+					<li class="fragment">Dieser Quellcode ist für ein Programm <span class="hl">gut
+							prozessierbar</span>.</li>
+					<li class="fragment">Auch <span class="hl">ohne Prozessierung</span> ist erkennbar, dass "wirklich"
+						und "Markdown" betont sind.</li>
+					<li class="fragment">(Ein Sternchen gilt als kusive Hervorhebung, zwei Sternchen als Fettdruck)</li>
+					<li class="fragment"><span class="hl" style="text-decoration: underline;">Weitere Infos zum
+							Markdown-Syntax
+							findet ihr <a href="https://quarto.org/docs/authoring/markdown-basics.html"
+								target="blank">auf der Quarto
 								Website</a></span></li>
-					<li class="fragment">Ein Programm wie <a href="http://quarto.org" target="blank">Quarto</a> kann Markdown <span
-							class="hl">in PDF oder HTML</span> konvertiert</li>
-					<li class="fragment">Markdown kann als <span class="hl">kostenloser Ersatz</span> für herkömmliche
-						Text-Layout-Systeme wie Microsoft Word genutzt werden</li>
+					<li class="fragment">Apropos: Lasst uns kurz über <span class="hl">Quarto</span> reden</li>
 				</ul>
-
-
-
-
+			</div>
 
 			</section>
+
+			<section>
+				<h3>Quarto <a style="text-transform: none;" href="http://quarto.org" target="blank">(quarto.org)</a></h3>
+				<ul>
+					<li class="fragment">Quarto kann Markdown <span class="hl">in PDF, HTML, DOCX uvm.</span> konvertiert</li>
+					<li class="fragment">Quarto ist besonders, weil es auch <span class="hl">R oder Python Code</span> in Markdown konvertieren kann.</li>
+					<li class="fragment">Zudem ist Quarto <span class="hl">in RStudio integriert</span>.</li>
+					<li class="fragment">Quarto ist für jeglicher Text nutzbar und kann als <span class="hl">kostenloser Ersatz</span> für herkömmliche Text-Layout-Systeme wie Microsoft Word genutzt werden.</li>
+					<li class="fragment">Zum Beispiel kann man seine Projekt- / <span class="hl">Masterarbeit in Quarto</span> schreiben.<br> <a href="https://fbilan.github.io/GEO880_2020/Project_GEO880_Wysling_Biland.html">Hier ein Beispiel</a> (Webseite), und <a href="X_brandenbergMarkwalder.pdf">hier ein weiteres</a> (pdf)</li>
+					<li class="fragment">Aus Quarto können auch <span class="hl">Slides oder Ebooks</span> generiert werden</li>
+				</ul>
+
+			</section>
+
+
+
+
 
 			<section>
 				<h3>Quarto File bearbeiten</h3>
@@ -208,20 +283,20 @@
 				</div>
 
 				<div class="r-stack">
-					<div class="fragment fade-in-then-out">
+					<div class="fragment fade-out" data-fragment-index="0">
 						<p>
 							Zurück zu unseren Unterlagen. Wir wollten ja zwei Änderungen
 							an den Unterlagen vornehmen:
 						</p>
 					</div>
-					<div>
-						<ul class="r-stack">
-							<li class="fragment fade-in-then-out">"<em>den bekannten Methoden</em>"" zu "<em>den <span
-										style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"
-							</li>
-							<li class="fragment fade-in-then-out">"lm" soll als Code dargestellt werden ("<code
-									style="background-color: grey;">lm</code>")</li>
-						</ul>
+					<div class="fragment fade-in-then-out" data-fragment-index="0">
+						<p>"<em>den bekannten Methoden</em>"" zu "<em>den <span
+							style="text-decoration: underline;">uns bereits</span> bekannten Methoden</em>"
+				</p>
+					</div>
+					<div class="fragment fade-in-then-out" data-fragment-index="1">
+						<p>"lm" soll als Code dargestellt werden ("<code
+							style="background-color: grey;">lm</code>")</p>
 					</div>
 					<div class="fragment fade-in-then-out">
 						<p>
@@ -256,14 +331,14 @@
 
 					<div class="fragment fade-out" data-fragment-index="0">
 						<p>
-							Diese Tastenkombination öffnet die Suchleiste...
+							<kbd>Ctrl</kbd>+<kbd>F</kbd> öffnet die Suchleiste...
 						</p>
 					</div>
 
 					<div class="fragment fade-in-then-out" data-fragment-index="0">
 						<p>
 
-							... wo wir einen sinvollen Begriff eingeben können und auf 
+							... wo wir einen sinvollen Begriff eingeben können und auf
 							<span class="gh-button gh-lightgray">Next</span> klicken...
 						</p>
 					</div>
@@ -307,8 +382,8 @@
 					</div>
 					<div class="fragment fade-in-then-out" data-fragment-index="1">
 						<p>
-							"lm" soll als Code dargestellt werden ("<code class="code">lm</code>"): Hierfür müssen wir
-							den Text mit <code class="code">`</code> Umgeben
+							"lm" soll als Code dargestellt werden ("<code class="code">lm</code>"). <br>Hierfür müssen wir
+							den Text mit <code class="code">`</code> Umgeben (siehe <a href="https://quarto.org/docs/authoring/markdown-basics.html#text-formatting" target="_blank">quarto.org</a> ).
 						</p>
 					</div>
 
@@ -336,7 +411,7 @@
 						</div>
 						<div class="fragment fade-in-then-out" data-fragment-index="0">
 							<p>
-								(das fertige Dokument können wir leider nicht sehen. Hierfür sind ein 
+								(das fertige Dokument können wir leider nicht sehen. Hierfür sind ein
 								paar Zusätliche Schritte nötig, die wir an dieser Stelle weglassen wollen)
 							</p>
 						</div>
@@ -358,7 +433,7 @@
 				<div id="screenshot-7" class="img-overlay">
 					<svg viewBox="0 0 1000 1000">
 
-						<rect class="mark-it" data-fragment-index="0" ry="5" x="570" y="428" width="105" ,
+						<rect class="mark-it" data-fragment-index="0" ry="5" x="570" y="427" width="105" ,
 							height="23" />
 
 					</svg>
@@ -410,20 +485,66 @@
 			</section>
 
 			<section>
-				<h3>Fertig!</h3>
+				<h3>Abgeschickt!</h3>
 				<div id="screenshot-10" class="img-overlay">
 					<svg viewBox="0 0 1000 1000">
 
-						<rect class="mark-it" data-fragment-index="0" ry="5" x="170" y="98" width="125" , height="23" />
+						<rect class="fragment fade-out mark-it" data-fragment-index="0" ry="5" x="170" y="96" width="125" , height="23" />
+						<rect class="fragment fade-in mark-it" data-fragment-index="0" ry="5" x="10" y="96" width="62" , height="23" />
 
 					</svg>
 				</div>
 
-				<p>
-					Der Änderungsvorschlag ("Pull Reqest") ist jetzt bei uns angekommen und wir werden in Prüfen.
-					Vielen Dank!
-				</p>
+				<div class="r-stack">
+					<div class="fragment fade-out" data-fragment-index="0">
+						<p>
+							Der Änderungsvorschlag ("Pull Reqest") ist jetzt bei uns angekommen und wir werden in Prüfen.
+						</p>
+						<p>
+							Wenn ihr unserem Repo noch ein ⭐ Sternchen geben wollt, würden wir uns sehr freuen!
+
+						</p>
+					</div>
+				
+					<div class="fragment fade-in" data-fragment-index="0">
+						<p>
+							Dafür auf <span class="gh-button gh-lightgray">< > Code</span> klicken...
+							
+
+						</p>
+					</div>
+				</div>
 			</section>
+
+			<section>
+				<h3>Sternchen ⭐</h3>
+				<div id="screenshot-11" class="img-overlay">
+					<svg viewBox="0 0 1000 1000">
+
+						<rect class="fragment fade-out mark-it" data-fragment-index="0" ry="5" x="870" y="140" width="80" , height="23" />
+						<rect class="fragment fade-in mark-it" data-fragment-index="0" ry="5" x="733" y="417" width="130" , height="120" />
+
+					</svg>
+				</div>
+
+				<div class="r-stack">
+					<div class="fragment fade-out" data-fragment-index="0">
+						<p>... und danach auf den Button <span class="gh-button gh-lightgray">☆ Star&nbsp;</span></p>
+	
+						<p>Und nun seit ihr fertig, <span class="hl">Vielen Dank!</span>. Eine Sache noch:</p>
+					</div>
+	
+					<div class="fragment fade-in" data-fragment-index="0">
+						<p>
+							Wenn wir euren Änderungsvorschlag akzeptieren, 
+							werdet ihr automatisch in der Liste der <span class="hl">Contributors</span> aufgenommen!
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+			
 
 
 		</div>
@@ -439,12 +560,11 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-			showNotes: true,
 			transition: "convex",
 
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			plugins: [RevealHighlight, RevealNotes]
 		});
 	</script>
 </body>
