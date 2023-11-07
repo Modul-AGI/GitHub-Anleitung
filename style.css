@@ -6,11 +6,35 @@ h3{
     font-size: 80% !important;
 }
 
+/* for all mark it svg elements*/
 .mark-it{
     fill-opacity:0.0;
     stroke: red;
-    stroke-width: 2px;
 }
+
+/* those svg elements that do not fade-in*/
+.mark-it:not(.fade-in),
+.mark-it:not(.fade-in-then-out){
+    stroke-width: 2px
+}
+
+/* for the fragments that fade in */
+.mark-it.current-fragment{
+    animation: 1s draw linear forwards;
+}
+
+@keyframes draw {
+    0% {
+      stroke-dasharray: 10;
+      stroke-width: 0px;
+    }
+    100% {
+      stroke-dasharray: 2;
+      stroke-dashoffset: 10;
+      stroke-width: 2px;
+    }
+  }
+
 
 .code{
     background-color: grey;
